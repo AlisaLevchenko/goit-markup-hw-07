@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Шапка-->
@@ -35,7 +35,7 @@
 
           <!--Контакты-->
           <ul class="contacts">
-            <li>
+            <li class="contacts__list">
               <a class="contacts__link" href="mailto:info@devstudio.com"
                 ><svg class="contacts__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
@@ -71,7 +71,7 @@
                 <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
                 <div role="form__wrapper">
                   <div class="form__group">
-                    <label class="form__lable" for="name">Имя
+                    <label class="form__label" for="name">Имя
                     </label>
                     <div class="form__input-wrapper">
                       <input class="form__input" type="text" name="user-name" id="name"/>
@@ -84,7 +84,7 @@
                   </div>
 
                   <div class="form__group">
-                    <label class="form__lable" for="tel">Телефон
+                    <label class="form__label" for="tel">Телефон
                     </label>
                     <div class="form__input-wrapper">
                       <input class="form__input" type="tel" name="tel" id="tel"/>
@@ -97,7 +97,7 @@
                   </div>
                   
                   <div class="form__group">
-                    <label class="form__lable" for="email">Почта
+                    <label class="form__label" for="email">Почта
                     </label>
                     <div class="form__input-wrapper">
                       <input class="form__input" type="email" name="mail" id="email"/>
@@ -109,7 +109,7 @@
                   </div>
 
                   <div class="form__group">
-                    <label class="form__lable" for="feedback">Комментарий</label>
+                    <label class="form__label" for="feedback">Комментарий</label>
                     <textarea class="form__input-textarea" name="feedback" id="feedback" rows="5" placeholder="Введите текст"></textarea>
                   </div>
                   
@@ -213,30 +213,30 @@
       <section class="business">
         <div class="container">
           <h2 class="business__title">Чем мы занимаемся</h2>
-          <ul class="busines__list">
-            <li class="busines__item">
+          <ul class="business__list">
+            <li class="business__item">
               <img
                 src="./images/box1.jpg"
                 alt="На столе стоит планшет, а также лежит альбомный лист со схемой и клавиатура, на которой человек набирает текст"
                 width="370"
               />
-              <h3 class="busines__description">Десктопные приложения</h3>
+              <h3 class="business__description">Десктопные приложения</h3>
             </li>
-            <li class="busines__item">
+            <li class="business__item">
               <img
                 src="./images/box2.jpg"
                 alt="На столе стоит ноутбук на котором макеты дизайна для мобильного приложения. Перед ноутбуком сидит человек и держит мобильный телефон в рук"
                 width="370"
               />
-              <h3 class="busines__description">Мобильные приложения</h3>
+              <h3 class="business__description">Мобильные приложения</h3>
             </li>
-            <li class="busines__item">
+            <li class="business__item">
               <img
                 src="./images/box3.jpg"
                 alt="На фоне рабочего стола, в руке держат планшет с цветовой схемой"
                 width="370"
               />
-              <h3 class="busines__description">Дизайнерские решения</h3>
+              <h3 class="business__description">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
@@ -421,7 +421,7 @@
 
       <!-- Клиенты -->
 
-      <section class="clients">
+      <section class="client">
         <div class="container">
           <h2 class="client__title">Постоянные клиенты</h2>
           <ul class="client__list">
@@ -480,7 +480,7 @@
           <a class="navigation__logo footer__logo" href="./index.html"
             ><span>Web</span>Studio</a
           >
-          <address>
+          <address class="address">
             <ul class="address__list">
               <li>
                 <a
@@ -539,7 +539,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="subscribe">
           <h3 class="subscribe__text">Подпишитесь на рассылку</h3>
           <form class="subscribe__form" name="signup_form" autocomplete="off" novalidate>
 
